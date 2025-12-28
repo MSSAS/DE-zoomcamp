@@ -12,3 +12,4 @@ os.makedirs("output", exist_ok=True)
 df.to_csv(f"output/output_{data}.csv", index =False)
 
 print(f"hi pipeline, month = {data}")
+ 
