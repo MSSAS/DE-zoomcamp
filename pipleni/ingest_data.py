@@ -83,7 +83,7 @@ def main():
     chunksize = 100000
     target_table = 'yellow_taxi_data'
 
-    engine = create_engine(f'postgresql+psycopg2://{pg_user}:{pg_pass}@{pg_host}:{pg_port}/{pg_db}')
+    engine = create_engine(f'postgresql://{pg_user}:{pg_pass}@{pg_host}:{pg_port}/{pg_db}')
     url_prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow'
 
     url = f'{url_prefix}/yellow_tripdata_{year:04d}-{month:02d}.csv.gz'
